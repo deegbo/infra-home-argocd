@@ -5,3 +5,6 @@ resources:
 - argocd-rbac-cm.yaml
 patches:
 - path: patches/argocd-cm.yaml
+  target:
+    kind: ConfigMap
+    name: argocd-cm
