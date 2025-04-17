@@ -3,6 +3,7 @@ kind: Kustomization
 namespace: argocd
 resources:
 - argocd-rbac-cm.yaml
+- patches/argocd-cm.yaml
 patches:
 - path: patches/argocd-cm.yaml
   target:
