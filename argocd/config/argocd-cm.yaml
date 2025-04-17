@@ -6,3 +6,10 @@ metadata:
 data:
   admin.enabled: "true"
   timeout.reconciliation: 40s
+  resource.customizations: |
+    ConfigMap:
+      health.lua: |
+        hs = {}
+        hs.status = "Healthy"
+        hs.message = "ConfigMap managed"
+        return hs
