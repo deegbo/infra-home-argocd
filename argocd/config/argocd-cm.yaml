@@ -9,7 +9,6 @@ metadata:
 data:
   application.instanceLabelKey: argocd.argoproj.io/instance
   admin.enabled: "true"
-  timeout.reconciliation: 40s
   resource.customizations: |
     ConfigMap:
       health.lua: |
