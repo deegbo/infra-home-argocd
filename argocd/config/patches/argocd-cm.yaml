@@ -16,3 +16,10 @@ data:
         hs.status = "Healthy"
         hs.message = "ConfigMap managed"
         return hs
+  repositories: |
+    - url: https://github.com/deegbo/apps-appset.git
+      type: git
+    - url: https://github.com/deegbo/argocd-appSet.git
+      type: git
+    - url: https://github.com/deegbo/infra-home-argocd.git
+      type: git
